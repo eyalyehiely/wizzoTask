@@ -2,6 +2,7 @@ header {
     background-color:white;
     color: #fff;
     position: fixed;
+
 }
 
 header nav {
@@ -9,6 +10,8 @@ header nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    width: 95vw;
+    padding-right: 8vw;
 }
 
 header nav ul {
@@ -31,14 +34,42 @@ header nav ul li a {
 
 /* top navbar */
 header .top-navbar {
-    padding-right: 4vw;
     background-color: #5806C7;
+    position: relative;
+    padding-right: 8vw;
+    box-sizing: content-box;
+}
+
+header .top-navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14vw;
+    height: 100%;
+    background-color: white;
+    /* z-index: -1;   //  */
+}
+header .top-navbar .svg-container {
+    position: absolute;
+    top: 50%;
+    right: 6vw; 
+    margin-top: 3vh;
+    transform: translateY(-50%); 
+    z-index: 2;
+}
+
+
+header .top-navbar svg {
+    width: 90px;
+    height: 90px;
 }
 
 .social-icons {
     display: flex;
     gap: 10px;
     margin: 0;
+    margin-left: 2vw;
 
 }
 
@@ -94,9 +125,9 @@ header .bottom-navbar nav ul li a {
 .nav-bar-input {
     position: relative; 
     margin-top: 0.5vh;
-    margin-left: 3vw;
+    margin-left: 1.5vw;
     height: 5vh;
-    width: 15vw;
+    width: 17vw;
     border-radius: 30px;
     border: 1px solid orange; 
     display: flex; 
