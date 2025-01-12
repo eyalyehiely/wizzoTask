@@ -1,0 +1,122 @@
+header {
+    background-color:white;
+    color: #fff;
+    position: fixed;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+/* top navbar */
+header .top-navbar {
+    padding-right: 4vw;
+    background-color: #5806C7;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    color: orange;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon i {
+    font-size: 8px;
+}
+
+.social-icon:hover {
+    background-color: #8043e3;
+    color: white;
+}
+
+.top-nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap:2vw;
+    text-align: right;
+}
+
+
+
+
+/* bottom navbar */
+header .bottom-navbar {
+    background-color: white;
+    color: black;
+    padding-right: 8vw;
+    direction: rtl;
+    
+}
+
+header .bottom-navbar nav ul li a {
+    color: black;
+    text-decoration: none;
+    gap:4vw;
+}
+
+.nav-bar-input {
+    position: relative; 
+    margin-top: 0.5vh;
+    margin-left: 3vw;
+    height: 5vh;
+    width: 15vw;
+    border-radius: 30px;
+    border: 1px solid orange; 
+    display: flex; 
+    align-items: center; 
+    background-color: white; 
+}
+
+#search-input {
+    height: 100%;
+    width: 100%;
+    border: none; 
+    border-radius: 30px;
+    padding-left: 2.5vw; 
+    outline: none; 
+
+}
+
+#search-icon {
+    position: absolute;
+    left: 1vw; 
+    color: gray; 
+    font-size: 1em; 
+}

@@ -1,0 +1,76 @@
+footer {
+    background: #5806C7;
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center; 
+    padding: 20px 10px;
+    direction: rtl; 
+    width: 100%;
+    margin: 0; 
+
+}
+
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    gap: 20px;
+    direction: rtl; 
+    text-align: right; 
+}
+
+.nadlan-center {
+    flex: 0 0 auto; 
+    text-align: right; 
+    list-style: none;
+    padding: 0;
+}
+
+.general-instructors{
+    flex: 1 1 200px; 
+    list-style: none;
+    padding: 0;
+    text-align: right;
+    padding-right: 5vw;
+}
+
+.urban-renewal,
+.buy-and-rent {
+    flex: 1 1 200px; 
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.footer-content li {
+    margin-bottom: 10px;
+    list-style-type: none; 
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-content a:hover {
+    color: blue; 
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #aaa;
+    text-align: center; 
+}
+
+footer h2{
+    font-size: 1.2rem;
+    color: white;
+    margin-right:40px;
+}
+

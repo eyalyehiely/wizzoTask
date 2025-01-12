@@ -1,0 +1,20 @@
+
+.section-with-sidebar {
+    display: flex;
+    gap: 12px; 
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 0 0 300px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-top: 5vh;
+    max-width: 300px;
+}
+
+
+
+
