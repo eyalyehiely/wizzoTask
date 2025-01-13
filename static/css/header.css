@@ -59,7 +59,8 @@ header .top-navbar .svg-container {
     transform: translateY(-50%);
     z-index: 2;
 }
-.hamburger-menu{
+
+.hamburger-menu {
     display: none;
 }
 
@@ -173,7 +174,8 @@ header .bottom-navbar nav ul li a {
     .nav-bar-input {
         width: 25vw;
     }
-    .hamburger-menu{
+
+    .hamburger-menu {
         display: none;
     }
 }
@@ -196,6 +198,15 @@ header .bottom-navbar nav ul li a {
         padding: 15px;
         z-index: 1000;
         order: -1;
+    }
+
+    #middle-ham-span {
+        background-color: red; 
+        width: 20px;
+    }
+
+    #last-ham-span {
+        width: 12px;
     }
 
 
@@ -239,7 +250,7 @@ header .bottom-navbar nav ul li a {
         z-index: 2;
     }
 
-    
+
 
     #first-letter-logo-path {
         fill: white;
@@ -298,11 +309,13 @@ header .bottom-navbar nav ul li a {
         display: block;
         padding: 10px 0;
         width: 100%;
-        color:white
+        color: white
     }
 
 
     .nav-bar-input {
         display: none;
     }
+
+
 }
