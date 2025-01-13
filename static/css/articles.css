@@ -1,6 +1,5 @@
 .card {
     background-color: #fff;
-
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 300px;
@@ -8,11 +7,41 @@
     font-family: Arial, sans-serif;
 }
 
+.card-image {
+    position: relative;
+}
+
 .card-image img {
     width: 100%;
     height: auto;
     display: block;
+    border-top-left-radius: 8px;  
+    border-top-right-radius: 8px;
 }
+/* Tag Styles */
+.tag {
+    width: 100px;
+    height: 20px; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%, 0% 40%);
+    direction: rtl;
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+}
+
+.tag .tag-text {
+    text-align: right;
+    margin: 0; 
+    padding: 0 5px; 
+    font-size: 0.9rem; 
+    font-weight:lighter;
+
+}
+
 
 .card-event {
     background-color: #fff;
@@ -52,7 +81,7 @@
 
 .card-footer {
     padding-left: 50%;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -131,12 +160,12 @@ section article p {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    margin: 20px 0;
+    margin-right: 9vw;
     direction: rtl;
 }
 
 .section-2-hr h3 {
-    margin: 0;
+    margin-right: 1vw;
     white-space: nowrap;
 }
 
@@ -144,7 +173,7 @@ section article p {
     flex: 1;
     margin: 0;
     border: none;
-    border-top: 1px solid orange
+    border-top: 0.5px solid orange
 }
 
 
@@ -216,6 +245,10 @@ section article p {
             width: 100%;
             height: auto;
             display: block;
+        }
+        
+        #snow-pic {
+            display: none !important;
         }
     }
 
