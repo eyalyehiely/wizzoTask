@@ -161,6 +161,7 @@ header .bottom-navbar nav ul li a {
 @media (max-width: 767px) {
     header nav {
         padding-right: 2vw;
+        width:100vw
     }
 
     .top-nav-links,
@@ -213,9 +214,7 @@ header .bottom-navbar nav ul li a {
         right: 0;
     }
 
-    .top-navbar {
-        width: relative;
-    }
+   
 
     header .top-navbar .svg-container {
         position: absolute;

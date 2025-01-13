@@ -4,26 +4,26 @@ body {
     padding: 0;
     line-height: 1.6;
     background-color: #faf3fa;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 
 /* main ad */
 .main-ad {
-    width:60vw;
+    width: 60vw;
     height: 30vh;
     padding-top: 8vh;
     margin-top: 30px;
 }
-    
+
 
 /* Main Article - bold man */
 .main-article {
-    width:60vw;
+    width: 60vw;
     height: 40vh;
     padding-top: 10px;
     margin: 100px auto;
@@ -36,7 +36,7 @@ body {
     justify-content: space-between;
     width: 100%;
     gap: 20px;
-    
+
 }
 
 .main-article-text {
@@ -60,7 +60,7 @@ body {
 
 
 .main-article-pic {
-    position: relative; 
+    position: relative;
     width: 30vw;
     height: 40vh;
 }
@@ -68,7 +68,7 @@ body {
 .main-article-pic img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 
 }
 
@@ -76,24 +76,24 @@ body {
 .tag {
     background-color: #55EBB1;
     width: 160px;
-    height: 50px; 
+    height: 50px;
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%, 0% 40%);
     direction: rtl;
-    position: absolute; 
-    bottom: 0; 
-    right: 0; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .tag .tag-text {
     text-align: right;
-    margin: 0; 
-    padding: 0 5px; 
-    font-size: 0.9rem; 
-    font-weight:lighter;
+    margin: 0;
+    padding: 0 5px;
+    font-size: 0.9rem;
+    font-weight: lighter;
 
 }
 
@@ -101,27 +101,20 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .vertical-line {
-    width: 1px; 
-    background-color: purple; 
-    height: auto; 
-    min-height: 100%; 
-    margin-top: 12vh; 
+    width: 1px;
+    background-color: purple;
+    height: auto;
+    min-height: 100%;
+    margin-top: 12vh;
     align-self: stretch;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-    .sidebar {
-        display: none;
-    }
-    .main-content {
-        width: 100%;
-    }
-}
+
 
 /* Tablet Styles */
 @media (max-width: 1024px) {
@@ -154,14 +147,21 @@ body {
 
     .main-article {
         width: 90vw;
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
     }
 }
 
 @media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
 
     .main-content {
-        width:100vw;
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100vw;
         padding: 0 0px;
         gap: 0.5px;
     }
@@ -191,37 +191,31 @@ body {
         height: auto;
     }
 
-  /* Responsive Design for Tablets */
-@media (max-width: 1024px) {
+
+
+
+
     .main-article {
-        width: 80vw;
-        height: auto;
+        width: 100vw;
+        margin: 0 auto;
+        /* Center the article */
     }
-
-    .main-article-pic {
-        width: 40vw;
-    }
-}
-
 
     .main-article-content {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
+        /* Adjust spacing */
     }
 
     .main-article-pic {
-        width: 60vw;
-        height: 30vh;
+        width: 90vw;
+        order: -1;
     }
 
-    .tag {
-        position: static; 
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 0% 40%); 
-        margin: 10px 0 0 0; /* Adds top margin */
-    }
-
-    .tag .tag-text {
-        font-size: 0.8rem;
+    .main-article-text {
+        order: 1;
+        text-align: center;
     }
 
     .main-article-text h1 {
@@ -232,4 +226,11 @@ body {
         font-size: 14px;
     }
 
+    .tag {
+        position: relative;
+        bottom: 10px;
+        right: 10px;
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%, 0% 40%);
+        font-size: 2rem;
+    }
 }
