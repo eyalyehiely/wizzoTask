@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f1e9f1;
+    background-color: #fcfcfc;
     overflow-x: hidden; 
 }
 
@@ -16,7 +16,7 @@ body {
 .main-ad {
     width:60vw;
     height: 30vh;
-    padding-top: 5vh;
+    padding-top: 8vh;
     margin-top: 30px;
 }
     
@@ -76,7 +76,7 @@ body {
     background-color: purple; 
     height: auto; 
     min-height: 100%; 
-    margin-top: 9.5vh; 
+    margin-top: 12vh; 
     align-self: stretch;
     box-sizing: border-box; 
 }
