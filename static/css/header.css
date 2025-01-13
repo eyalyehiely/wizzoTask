@@ -159,9 +159,20 @@ header .bottom-navbar nav ul li a {
 
 /* mobile */
 @media (max-width: 767px) {
+    header {
+        background-color: rgb(231, 223, 223);
+        color: #fff;
+        position: fixed;
+    
+    }
+    
     header nav {
-        padding-right: 2vw;
-        width:100vw
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100vw;
+        padding-right: 8vw;
     }
 
     .top-nav-links,
@@ -208,8 +219,14 @@ header .bottom-navbar nav ul li a {
         width: 40vw;
     }
 
+    header .top-navbar{
+        width: 100%;
+        
+    }
+
     header .top-navbar::after {
-        width: 1vw;
+        width: 50vw;
+        margin-right: 20vw;
         background-color: #5806C7;
         right: 0;
     }
@@ -221,7 +238,7 @@ header .bottom-navbar nav ul li a {
         top: 50%;
         right: 6vw;
         margin-top: 0.5vh;
-        margin-right: 1.5vw;
+        margin-right: 5vw;
         transform: translateY(-50%);
         z-index: 2;
     }

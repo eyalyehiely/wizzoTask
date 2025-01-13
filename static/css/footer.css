@@ -1,9 +1,9 @@
 
 footer {
     background-color:#5806C7;
-    padding: 80px 0 40px; /* Increased top padding to accommodate overlapping navbar */
-    border-top: 1px solid #e0e0e0; /* Adds a top border to the footer */
-    position: relative; /* Establishes positioning context for absolute elements */
+    padding: 80px 0 40px;
+    border-top: 1px solid #e0e0e0; 
+    position: relative; 
     z-index: 0;
 }
 .footer-content {
@@ -152,41 +152,101 @@ footer h2 {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+
+    footer {
+        background-color:#5806C7;
+        padding: 80px 0 10px;
+        border-top: 1px solid #e0e0e0; 
+        z-index: -1;
+    }
     .footer-content {
-        flex-direction: column;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .footer-content>div {
-        flex: 1 1 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    footer h2 {
-        margin-right: 0;
-    }
-
-    .nadlan-center ul,
-    .general-instructors ul,
-    .urban-renewal ul,
-    .buy-and-rent ul {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+        direction: rtl;
+        text-align: right;
+        position: relative;
+        z-index: 1;
+        margin-top: 30px;
     }
-
-    .nadlan-center li,
-    .general-instructors li,
-    .urban-renewal li,
-    .buy-and-rent li {
+    
+    
+    
+    
+    /* Top Navbar on Footer Styles */
+    .top-navbar-on-footer{
+        display: none
+    }
+    
+    
+    
+    
+    .nadlan-center {
+        flex: 0 0 auto;
+        text-align: right;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .general-instructors {
+        flex: 1 1 200px;
+        list-style: none;
+        padding: 0;
+        text-align: right;
+        padding-right: 5vw;
+    }
+    
+    .urban-renewal,
+    .buy-and-rent {
+        flex: 1 1 200px;
+        list-style: none;
+        padding: 0;
+        text-align: right;
+    }
+    
+    .footer-content li {
+        margin-bottom: 10px;
+        list-style-type: none;
+    }
+    
+    .footer-content a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.9rem;
+        transition: color 0.3s;
+    }
+    
+    .footer-content a:hover {
+        color: blue;
+    }
+    
+    footer p {
+        margin-top: 20px;
+        font-size: 0.8rem;
+        color: #aaa;
         text-align: center;
+    }
+    
+    footer h2 {
+        font-size: 1.2rem;
+        color: white;
+        margin-right: 40px;
+    }
+    
+    .bottom-footer {
+        background-color: black;
+        color: #666;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 0.8rem;
         width: 100%;
-        padding: 5px 0;
+    }
+    
+    .bottom-footer p {
+        margin: 0;
     }
 
     @media (max-width: 768px) {
