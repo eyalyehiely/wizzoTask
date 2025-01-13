@@ -157,29 +157,6 @@ header .bottom-navbar nav ul li a {
 }
 
 
-@media (max-width: 1024px) {
-    header nav {
-        padding-right: 4vw;
-        width: 98vw;
-        padding: 0;
-        position: relative;
-    }
-
-
-    .top-nav-links {
-        gap: 1vw;
-        font-size: 0.8rem;
-    }
-
-    .nav-bar-input {
-        width: 25vw;
-    }
-
-    .hamburger-menu {
-        display: none;
-    }
-}
-
 /* mobile */
 @media (max-width: 767px) {
     header nav {
