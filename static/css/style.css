@@ -18,6 +18,7 @@ body {
     height: 30vh;
     padding-top: 8vh;
     margin-top: 30px;
+
 }
 
 
@@ -28,6 +29,7 @@ body {
     padding-top: 10px;
     margin: 100px auto;
     background-color: white;
+    z-index: -1;
 }
 
 .main-article-content {
@@ -214,8 +216,12 @@ body {
 
     .main-article-pic {
         width: 90vw;
-        order: -1;
     }
+    .main-article-pic img {
+        width: 90vw;
+        height: 30vh;
+    }
+
 
     .main-article-text {
         order: 1;
@@ -231,10 +237,26 @@ body {
     }
 
     .tag {
-        position: relative;
-        bottom: 10px;
-        right: 10px;
+        background-color: #55EBB1;
+        width: 160px;
+        height: 40px;
+        color: black;
+        display: flex;
+        align-items: right;
+        justify-content: center;
         clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%, 0% 40%);
-        font-size: 2rem;
+        direction: rtl;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .tag .tag-text {
+        text-align: right;
+        margin: 0;
+        padding: 0 5px;
+        font-size: 0.9rem;
+        font-weight: lighter;
+    
     }
 }
