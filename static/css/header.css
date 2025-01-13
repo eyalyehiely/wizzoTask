@@ -1,5 +1,5 @@
 header {
-    background-color: white;
+    background-color: rgb(231, 223, 223);
     color: #fff;
     position: fixed;
 
@@ -47,8 +47,7 @@ header .top-navbar::after {
     right: 0;
     width: 14vw;
     height: 100%;
-    background-color: white;
-    /* z-index: -1;   //  */
+    background-color: rgb(255, 255, 255);
 }
 
 header .top-navbar .svg-container {
@@ -56,10 +55,13 @@ header .top-navbar .svg-container {
     top: 50%;
     right: 6vw;
     margin-top: 3vh;
+    margin-right: 0.5vw;
     transform: translateY(-50%);
     z-index: 2;
 }
-
+.hamburger-menu{
+    display: none;
+}
 
 header .top-navbar svg {
     width: 90px;
@@ -171,6 +173,9 @@ header .bottom-navbar nav ul li a {
     .nav-bar-input {
         width: 25vw;
     }
+    .hamburger-menu{
+        display: none;
+    }
 }
 
 /* mobile */
@@ -221,16 +226,20 @@ header .bottom-navbar nav ul li a {
     }
 
     .top-navbar {
-        position: relative;
+        width: relative;
     }
 
-    .svg-container {
+    header .top-navbar .svg-container {
         position: absolute;
-        right: 30px;
         top: 50%;
-        transform: translateY(-30%);
+        right: 6vw;
+        margin-top: 0.5vh;
+        margin-right: 1.5vw;
+        transform: translateY(-50%);
         z-index: 2;
     }
+
+    
 
     #first-letter-logo-path {
         fill: white;
@@ -248,6 +257,7 @@ header .bottom-navbar nav ul li a {
 
 
     .mobile-menu-active .social-icons,
+    .mobile-menu-active .social-icon,
     .mobile-menu-active .top-nav-links,
     .mobile-menu-active .bottom-navbar ul {
         display: flex;
@@ -262,7 +272,7 @@ header .bottom-navbar nav ul li a {
         z-index: 999;
     }
 
-    .mobile-menu-active .social-icons {
+    .mobile-menu-active .social-icons .social-icon {
         flex-direction: column;
         flex-wrap: wrap;
         gap: 15px;
@@ -277,16 +287,18 @@ header .bottom-navbar nav ul li a {
         align-items: flex-start;
     }
 
-    .mobile-menu-active .top-nav-links li,
+    .mobile-menu-active .top-nav-links li a,
     .mobile-menu-active .bottom-navbar ul li {
         width: 100%;
     }
 
     .mobile-menu-active .top-nav-links a,
-    .mobile-menu-active .bottom-navbar ul a {
+    .mobile-menu-active .bottom-navbar ul a,
+    .social-icons li a {
         display: block;
         padding: 10px 0;
         width: 100%;
+        color:white
     }
 
 
