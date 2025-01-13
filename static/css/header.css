@@ -1,5 +1,5 @@
 header {
-    background-color:white;
+    background-color: white;
     color: #fff;
     position: fixed;
 
@@ -50,12 +50,13 @@ header .top-navbar::after {
     background-color: white;
     /* z-index: -1;   //  */
 }
+
 header .top-navbar .svg-container {
     position: absolute;
     top: 50%;
-    right: 6vw; 
+    right: 6vw;
     margin-top: 3vh;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     z-index: 2;
 }
 
@@ -100,7 +101,7 @@ header .top-navbar svg {
     list-style: none;
     padding: 0;
     margin: 0;
-    gap:2vw;
+    gap: 2vw;
     text-align: right;
 }
 
@@ -113,41 +114,183 @@ header .bottom-navbar {
     color: black;
     padding-right: 8vw;
     direction: rtl;
-    
+
 }
 
 header .bottom-navbar nav ul li a {
     color: black;
     text-decoration: none;
-    gap:4vw;
+    gap: 4vw;
 }
 
 .nav-bar-input {
-    position: relative; 
+    position: relative;
     margin-top: 0.5vh;
     margin-left: 1.5vw;
     height: 5vh;
     width: 17vw;
     border-radius: 30px;
-    border: 1px solid orange; 
-    display: flex; 
-    align-items: center; 
-    background-color: white; 
+    border: 1px solid orange;
+    display: flex;
+    align-items: center;
+    background-color: white;
 }
 
 #search-input {
     height: 100%;
     width: 100%;
-    border: none; 
+    border: none;
     border-radius: 30px;
-    padding-left: 2.5vw; 
-    outline: none; 
+    padding-left: 2.5vw;
+    outline: none;
 
 }
 
 #search-icon {
     position: absolute;
-    left: 1vw; 
-    color: gray; 
-    font-size: 1em; 
+    left: 1vw;
+    color: gray;
+    font-size: 1em;
+}
+
+
+@media (max-width: 1024px) {
+    header nav {
+        padding-right: 4vw;
+        width: 98vw;
+        padding: 0;
+        position: relative;
+    }
+
+
+    .top-nav-links {
+        gap: 1vw;
+        font-size: 0.8rem;
+    }
+
+    .nav-bar-input {
+        width: 25vw;
+    }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    header nav {
+        padding-right: 2vw;
+    }
+
+    .top-nav-links,
+    .bottom-navbar ul {
+        display: none;
+    }
+
+    /* Hamburger Menu Icon */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        padding: 15px;
+        z-index: 1000;
+        order: -1;
+    }
+
+
+    .hamburger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.3s;
+
+    }
+
+
+
+    .social-icons {
+        gap: 5px;
+    }
+
+    .nav-bar-input {
+        width: 40vw;
+    }
+
+    header .top-navbar::after {
+        width: 1vw;
+        background-color: #5806C7;
+        right: 0;
+    }
+
+    .top-navbar {
+        position: relative;
+    }
+
+    .svg-container {
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-30%);
+        z-index: 2;
+    }
+
+    #first-letter-logo-path {
+        fill: white;
+    }
+
+    #second-word-logo-path {
+        fill: white;
+    }
+
+    .social-icons,
+    .top-nav-links,
+    .bottom-navbar ul {
+        display: none;
+    }
+
+
+    .mobile-menu-active .social-icons,
+    .mobile-menu-active .top-nav-links,
+    .mobile-menu-active .bottom-navbar ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+        background-color: #5806C7;
+        padding: 60px 20px;
+        z-index: 999;
+    }
+
+    .mobile-menu-active .social-icons {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .mobile-menu-active .top-nav-links,
+    .mobile-menu-active .bottom-navbar ul {
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .mobile-menu-active .top-nav-links li,
+    .mobile-menu-active .bottom-navbar ul li {
+        width: 100%;
+    }
+
+    .mobile-menu-active .top-nav-links a,
+    .mobile-menu-active .bottom-navbar ul a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+
+    .nav-bar-input {
+        display: none;
+    }
 }

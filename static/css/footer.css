@@ -2,35 +2,49 @@ footer {
     background: #5806C7;
     color: #fff;
     font-size: 0.9rem;
-    text-align: center; 
+    text-align: center;
     padding: 20px 10px;
-    direction: rtl; 
+    direction: rtl;
     width: 100%;
-    margin: 0; 
+    margin: 0;
 
 }
+
+.bottom-footer {
+    background-color: black;
+    color: #666;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.bottom-footer p {
+    margin: 0;
+}
+
 
 
 .footer-content {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    max-width: 1200px; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
-    direction: rtl; 
-    text-align: right; 
+    direction: rtl;
+    text-align: right;
 }
 
 .nadlan-center {
-    flex: 0 0 auto; 
-    text-align: right; 
+    flex: 0 0 auto;
+    text-align: right;
     list-style: none;
     padding: 0;
 }
 
-.general-instructors{
-    flex: 1 1 200px; 
+.general-instructors {
+    flex: 1 1 200px;
     list-style: none;
     padding: 0;
     text-align: right;
@@ -39,7 +53,7 @@ footer {
 
 .urban-renewal,
 .buy-and-rent {
-    flex: 1 1 200px; 
+    flex: 1 1 200px;
     list-style: none;
     padding: 0;
     text-align: right;
@@ -47,7 +61,7 @@ footer {
 
 .footer-content li {
     margin-bottom: 10px;
-    list-style-type: none; 
+    list-style-type: none;
 }
 
 .footer-content a {
@@ -58,19 +72,79 @@ footer {
 }
 
 .footer-content a:hover {
-    color: blue; 
+    color: blue;
 }
 
 footer p {
     margin-top: 20px;
     font-size: 0.8rem;
     color: #aaa;
-    text-align: center; 
+    text-align: center;
 }
 
-footer h2{
+footer h2 {
     font-size: 1.2rem;
     color: white;
-    margin-right:40px;
+    margin-right: 40px;
 }
 
+
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .footer-content {
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .footer-content>div {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .footer-content>div {
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    footer h2 {
+        margin-right: 0;
+    }
+
+    .nadlan-center ul,
+    .general-instructors ul,
+    .urban-renewal ul,
+    .buy-and-rent ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nadlan-center li,
+    .general-instructors li,
+    .urban-renewal li,
+    .buy-and-rent li {
+        text-align: center;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    @media (max-width: 768px) {
+        .bottom-footer {
+            padding: 8px 0;
+            font-size: 0.7rem;
+        }
+    }
+}

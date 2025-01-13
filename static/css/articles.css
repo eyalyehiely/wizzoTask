@@ -8,8 +8,6 @@
     font-family: Arial, sans-serif;
 }
 
-
-
 .card-image img {
     width: 100%;
     height: auto;
@@ -126,4 +124,124 @@ section article h3 {
 
 section article p {
     font-size: 0.9rem;
+}
+
+.section-2-hr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    direction: rtl;
+}
+
+.section-2-hr h3 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.section-2-hr hr {
+    flex: 1;
+    margin: 0;
+    border: none;
+    border-top: 1px solid orange
+}
+
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+
+    .articles-container-1,
+    .articles-container-2 {
+        width: 90vw;
+    }
+
+    .articles-container-1 .card,
+    .articles-container-2 .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .buttom-image-container-2 img {
+        width: 97vw;
+    }
+
+    @media (max-width: 768px) {
+        .section-2-hr {
+            padding: 0 10px;
+            gap: 8px;
+        }
+
+        .section-2-hr hr {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .articles-container-1,
+    .articles-container-2 {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .articles-container-1 .card,
+    .articles-container-2 .card {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+        .card {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .card-image {
+            flex: 0 0 40%;
+        }
+
+        .card-content {
+            flex: 1;
+            padding: 10px;
+        }
+
+
+        .card-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    /* Very Small Mobile Styles */
+    @media (max-width: 480px) {
+        .card {
+            display: f;
+            flex-direction: row;
+        }
+
+        .card-image {
+            flex: 0 0 40%;
+        }
+
+        .card-content {
+            flex: 1;
+            padding: 8px;
+        }
+
+        .card-content h3 {
+            font-size: 0.9rem;
+        }
+
+        .card-footer {
+            font-size: 0.8rem;
+        }
+    }
+
 }
