@@ -23,12 +23,11 @@ body {
 
 /* Main Article - bold man */
 .main-article {
-    align-items: center;
     width:60vw;
     height: 40vh;
     padding-top: 10px;
-    margin-bottom: 200px;
-    background-color:white
+    margin: 100px auto;
+    background-color: white;
 }
 
 .main-article-content {
@@ -42,12 +41,14 @@ body {
 
 .main-article-text {
     flex: 1;
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     color: #333;
 }
 
 .main-article-text h1 {
     font-size: 24px;
+    margin-bottom: 10px;
+
 }
 
 .main-article-text p {
@@ -58,10 +59,42 @@ body {
 
 
 
-.main-article-pic img {
+.main-article-pic {
+    position: relative; 
     width: 30vw;
     height: 40vh;
-    padding: 0;
+}
+
+.main-article-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+
+}
+
+/* Tag Styles */
+.tag {
+    background-color: #55EBB1;
+    width: 160px;
+    height: 50px; 
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%, 0% 40%);
+    direction: rtl;
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+}
+
+.tag .tag-text {
+    text-align: right;
+    margin: 0; 
+    padding: 0 5px; 
+    font-size: 0.9rem; 
+    font-weight:lighter;
+
 }
 
 
@@ -108,10 +141,11 @@ body {
 
 
 @media (max-width: 1024px) and (min-width: 769px) {
+
     .main-ad {
         width: 90vw;
         height: auto;
-        margin-top: 7vh;
+        margin-top: 4vh;
     }
 
     img.main-ad#snow-pic {
@@ -127,7 +161,7 @@ body {
 @media (max-width: 768px) {
 
     .main-content {
-        width: 100%;
+        width:100vw;
         padding: 0 0px;
         gap: 0.5px;
     }
@@ -136,7 +170,7 @@ body {
         width: 100%;
         height: auto;
         padding: 10px;
-        margin-top: 7vh;
+        margin-top: 5vh;
         box-sizing: border-box;
     }
 
@@ -157,18 +191,45 @@ body {
         height: auto;
     }
 
+  /* Responsive Design for Tablets */
+@media (max-width: 1024px) {
     .main-article {
-        width: 95%;
+        width: 80vw;
         height: auto;
-        margin: 10px auto;
     }
+
+    .main-article-pic {
+        width: 40vw;
+    }
+}
+
 
     .main-article-content {
         flex-direction: column;
+        align-items: center;
     }
 
-    .main-article-pic img {
-        width: 100%;
-        height: auto;
+    .main-article-pic {
+        width: 60vw;
+        height: 30vh;
     }
+
+    .tag {
+        position: static; 
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 0% 40%); 
+        margin: 10px 0 0 0; /* Adds top margin */
+    }
+
+    .tag .tag-text {
+        font-size: 0.8rem;
+    }
+
+    .main-article-text h1 {
+        font-size: 20px;
+    }
+
+    .main-article-text p {
+        font-size: 14px;
+    }
+
 }
