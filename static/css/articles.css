@@ -186,20 +186,20 @@ section article p {
     .articles-container-1,
     .articles-container-2 {
         width: 100%;
-        padding: 0 5px;
+        padding: 0 1px;
     }
 
     .articles-container-1 .card,
     .articles-container-2 .card {
         flex: 1 1 100%;
-        margin: 10px 0;
+        margin: 8px 13%;
     }
 
     /* Mobile Styles */
     @media (max-width: 768px) {
         .card {
             flex-direction: row;
-            flex-wrap: nowrap;
+            flex-wrap:wrap;
         }
 
         .card-image {
@@ -221,10 +221,6 @@ section article p {
 
     /* Very Small Mobile Styles */
     @media (max-width: 480px) {
-        .card {
-            display: f;
-            flex-direction: row;
-        }
 
         .card-image {
             flex: 0 0 40%;
