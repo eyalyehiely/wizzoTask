@@ -312,3 +312,158 @@ header .bottom-navbar nav ul li a {
 
 
 }
+
+@media(max-width: 1024px) and (min-width: 768px) {
+    
+
+    header {
+        background-color: rgb(231, 223, 223);
+        color: #fff;
+        position: fixed;
+    
+    }
+    
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100vw;
+        padding-right: 8vw;
+    }
+
+    .top-nav-links,
+    .bottom-navbar ul {
+        display: none;
+    }
+
+    /* Hamburger Menu Icon */
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        padding: 15px;
+        z-index: 1000;
+        order: -1;
+    }
+
+    #middle-ham-span {
+        background-color: red; 
+        width: 20px;
+    }
+
+    #last-ham-span {
+        width: 12px;
+    }
+
+
+    .hamburger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.3s;
+
+    }
+
+
+
+    .social-icons {
+        gap: 5px;
+    }
+
+    .nav-bar-input {
+        width: 40vw;
+    }
+
+    header .top-navbar{
+        width: 100%;
+        
+    }
+
+    header .top-navbar::after {
+        width: 50vw;
+        margin-right: 20vw;
+        background-color: #5806C7;
+        right: 0;
+    }
+
+   
+
+    header .top-navbar .svg-container {
+        position: absolute;
+        top: 50%;
+        right: 6vw;
+        margin-top: 0.5vh;
+        margin-right: 7vw;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+
+
+
+    #first-letter-logo-path {
+        fill: white;
+    }
+
+    #second-word-logo-path {
+        fill: white;
+    }
+
+    .social-icons,
+    .top-nav-links,
+    .bottom-navbar ul {
+        display: none;
+    }
+
+
+    .mobile-menu-active .social-icons,
+    .mobile-menu-active .social-icon,
+    .mobile-menu-active .top-nav-links,
+    .mobile-menu-active .bottom-navbar ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100vh;
+        background-color: #5806C7;
+        padding: 60px 20px;
+        z-index: 999;
+    }
+
+    .mobile-menu-active .social-icons .social-icon {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .mobile-menu-active .top-nav-links,
+    .mobile-menu-active .bottom-navbar ul {
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .mobile-menu-active .top-nav-links li a,
+    .mobile-menu-active .bottom-navbar ul li {
+        width: 100%;
+    }
+
+    .mobile-menu-active .top-nav-links a,
+    .mobile-menu-active .bottom-navbar ul a,
+    .social-icons li a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+        color: white
+    }
+
+
+    .nav-bar-input {
+        display: none;
+    }
+}
