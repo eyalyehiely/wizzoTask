@@ -87,6 +87,8 @@
     justify-content: space-between;
     font-size: 14px;
     color: #888;
+    direction: rtl;
+    margin-right: 0.5vw;
 }
 
 .card-footer span {
@@ -182,13 +184,76 @@ section article p {
 
 /* Mobile Styles */
 @media (max-width: 767px) {
-    .articles-container-1, .articles-container-2{
+
+    .articles-container-1,
+    .articles-container-2 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
+        gap: 5px;
     }
-    .articles-container-2{
-        margin-left: 6vw;
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        direction: rtl;
+        text-align: right;
     }
+
+
+    .card-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40vw;
+        height: 40vh;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    .tag {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+
+    .card-content {
+
+        margin-right: 140px;
+        box-sizing: border-box;
+    }
+
+    .card-content h3 {
+        margin: 0 0 10px;
+        font-size: 0.6em;
+        line-height: 1.2;
+        justify-content: right;
+    }
+
+    .card-footer {
+        margin-top: 10px;
+        font-size: 0.4em;
+        color: #666;
+    }
+
+
+    /* ****** */
 
     #snow-pic {
         display: none !important;
@@ -201,15 +266,7 @@ section article p {
     .section-2-hr hr {
         display: none;
     }
-
-    .card{
-        width:100vw;
-    }
-
 }
-
-
-
 
 /* Tablet Styles */
 @media (max-width: 1024px) {
