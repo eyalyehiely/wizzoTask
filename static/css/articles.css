@@ -186,15 +186,16 @@ section article p {
         display: flex;
         flex-direction:column;
     }
-    
+    .articles-container-2{
+        margin-left: 6vw;
+    }
 
     #snow-pic {
         display: none !important;
     }
 
     .section-2-hr {
-        padding: 0 10px;
-        gap: 8px;
+        gap: 1vw;
     }
 
     .section-2-hr hr {
