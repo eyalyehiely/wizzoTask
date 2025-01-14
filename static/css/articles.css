@@ -200,7 +200,7 @@ section article p {
     }
 
     .card {
-        margin: 1vh 0;
+        margin: 1vh 3vh;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -304,7 +304,23 @@ section article p {
     }
 
     .section-2-hr {
-        gap: 1vw;
+        display: flex; 
+        align-items: center; 
+        justify-content: flex-start; 
+        margin: 1vh 1vh;
+    }
+    
+    .section-2-hr img {
+        max-width: 20%; 
+        height: auto; 
+        position:absolute;
+        right: -15px;
+    }
+    
+    .section-2-hr h3 {
+        margin: 0; 
+        font-size: 1.2em; 
+        white-space: nowrap; 
     }
 
     .section-2-hr hr {
