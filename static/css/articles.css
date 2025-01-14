@@ -17,8 +17,6 @@
     width: 100%;
     height: auto;
     display: block;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
 }
 
 /* Tag Styles */
@@ -201,6 +199,10 @@ section article p {
 
     .section-2-hr hr {
         display: none;
+    }
+
+    .card{
+        width:100vw;
     }
 
 }
