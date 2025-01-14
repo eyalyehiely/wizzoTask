@@ -124,7 +124,7 @@ footer h2 {
     margin-right: 40px;
 }
 
-.bottom-footer {
+/* .bottom-footer {
     background-color: black;
     color: #666;
     padding: 10px 0;
@@ -135,6 +135,35 @@ footer h2 {
 
 .bottom-footer p {
     margin: 0;
+} */
+.bottom-footer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: black;
+    color: #666;
+    padding: 10px 20px; 
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.bottom-footer p {
+    margin: 0; 
+    display: flex;
+    direction: rtl;
+    align-items: center; 
+    gap: 5px; 
+}
+
+.bottom-footer img {
+    height: 20px; 
+    width: auto; 
+}
+.bottom-footer #copy-rights{
+    font-size:0.6rem;
 }
 
 
@@ -160,19 +189,19 @@ footer h2 {
     }
 
     footer {
-        background-color:#5806C7;
-        padding: 80px 0 10px;
-        border-top: 1px solid #e0e0e0; 
+        background-color: #5806C7;
+        padding: 80px 0 10px; 
+        border-top: 1px solid #e0e0e0;
         z-index: -1;
-        /* margin-left: 10vw; */
-        max-width: 768px;
-
+        width: 110%; 
+        margin: 0; 
+        max-width: none;
     }
     .footer-content {
-        display: flex;
-        flex-wrap: wrap;
+        display: wrap;
+        flex-direction: wrap;
         justify-content: space-between;
-        max-width: 1200px;
+        max-width: 150%;
         margin: 0 auto;
         gap: 20px;
         direction: rtl;
@@ -191,36 +220,6 @@ footer h2 {
     }
     
     
-    
-    
-    .nadlan-center {
-        flex: 0 0 auto;
-        text-align: right;
-        list-style: none;
-        padding: 0;
-    }
-    
-    .general-instructors {
-        flex: 1 1 200px;
-        list-style: none;
-        padding: 0;
-        text-align: right;
-        padding-right: 5vw;
-    }
-    
-    .urban-renewal,
-    .buy-and-rent {
-        flex: 1 1 200px;
-        list-style: none;
-        padding: 0;
-        text-align: right;
-    }
-    
-    .footer-content li {
-        margin-bottom: 10px;
-        list-style-type: none;
-    }
-    
     .footer-content a {
         text-decoration: none;
         color: #fff;
@@ -231,7 +230,8 @@ footer h2 {
     .footer-content a:hover {
         color: blue;
     }
-    
+
+   
     footer p {
         margin-top: 20px;
         font-size: 0.8rem;
@@ -245,23 +245,9 @@ footer h2 {
         margin-right: 40px;
     }
     
-    .bottom-footer {
-        background-color: black;
-        color: #666;
-        padding: 10px 0;
-        text-align: center;
-        font-size: 0.8rem;
-        width: 100%;
-    }
-    
-    .bottom-footer p {
-        margin: 0;
+    .bottom-footer{
+        display: none;
     }
 
-    @media (max-width: 768px) {
-        .bottom-footer {
-            padding: 8px 0;
-            font-size: 0.7rem;
-        }
-    }
+   
 }
