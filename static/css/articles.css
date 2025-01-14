@@ -245,12 +245,13 @@ section article p {
     
     .tag .tag-text {
         margin: 0;               
-        padding: 0; 
+        padding: 0 5px;     
         text-align: right;       
         font-weight: 300;        
         font-size: inherit;      
         line-height: 1.;
-        direction: rtl;         
+        direction: rtl;    
+  
     }
 
 
