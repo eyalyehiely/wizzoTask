@@ -184,7 +184,7 @@ header .bottom-navbar nav ul li a {
     .hamburger-menu {
         display: block;
         cursor: pointer;
-        padding: 15px;
+        padding: 10px;
         z-index: 1000;
         order: -1;
     }
@@ -204,7 +204,7 @@ header .bottom-navbar nav ul li a {
         width: 25px;
         height: 3px;
         background-color: white;
-        margin: 5px 0;
+        margin: 8px 0;
         transition: 0.3s;
 
     }
