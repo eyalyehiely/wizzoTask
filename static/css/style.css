@@ -4,7 +4,6 @@ body {
     padding: 0;
     line-height: 1.6;
     background-color: #faf3fa;
-    /* overflow-x: hidden; */
 }
 
 * {
@@ -23,6 +22,7 @@ body {
 
 img.main-ad#snow-pic {
    height: 40vh;
+   padding-top: 1vh;
 }
 
 /* Main Article - bold man */
