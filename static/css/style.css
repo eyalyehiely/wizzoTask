@@ -63,8 +63,9 @@ img.main-ad#snow-pic {
 .main-article-pic {
     position: relative;
     width: 30vw;
-    height: 40vh;
-    padding:10px
+    height: 38vh;
+
+    top:0;
 }
 
 .main-article-pic img {
@@ -212,12 +213,14 @@ img.main-ad#snow-pic {
     .main-article-pic {
         width: 40vw;
         margin-right:60vw;
-        height: 25vh
+        height: 25vh;
+
     }
 
     .main-article-pic img {
         width: 90vw;
-        height: 20vh;
+        height: 26vh;
+        
     }
 
 
@@ -258,30 +261,25 @@ img.main-ad#snow-pic {
         width: 160px;
         height: 40px;
         color: black;
-        display: relative;
-        align-items: center;
-        justify-content: center;
+        display: absolute;
+        align-items: right;
+        justify-content: right;
         clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%, 0% 40%);
         direction: rtl;
         position: absolute;
-        bottom: 0;
-        right: 80; */
+        bottom: 10000;
+        left: 100; */
         display: none;
+        
     }
     
     .tag .tag-text {
-        /* text-align: right; */
         margin: 0;
         padding: 0 5px;
         font-size: 0.9rem;
-        /* font-weight: lighter; */
-    
+
     }
 
-     .tag #bold-tag{
-        display:none !important;
-        margin-left: 3vw;
-    }
 
     h5 .tag-text{
         display:none !important;

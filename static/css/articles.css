@@ -189,9 +189,10 @@ section article p {
     .articles-container-1,
     .articles-container-2 {
         width: 100%;
+        size: 100%;
         display: flex;
         flex-direction: column;
-        gap:1vh
+        gap:1vh;
     }
 
     .articles-container-2 {
@@ -231,7 +232,7 @@ section article p {
 
     .tag {
         position: absolute;
-        bottom: 20%;    
+        bottom: 25%;    
         right: 0;      
         z-index: 2;
         padding: 5px 5px; 
@@ -241,7 +242,23 @@ section article p {
         border-radius: 4px;      
         font-size: 0.75rem;       
         line-height: 1.;  
-    }       
+    } 
+    
+    .tag-bold{
+        .tag {
+            position: absolute;
+            bottom: 25%;    
+            right: 0;      
+            z-index: 2;
+            padding: 5px 5px; 
+            text-align: right;
+            background-color: #ef4d08; 
+            color: #fff;             
+            border-radius: 4px;      
+            font-size: 0.75rem;       
+            line-height: 1.;  
+        }
+    }
     
     .tag .tag-text {
         margin: 0;               
