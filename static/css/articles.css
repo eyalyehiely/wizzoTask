@@ -138,7 +138,7 @@ section {
     width: 80vw;
     height: auto;
     border-radius: 8px;
-}
+} 
 
 
 section article {
@@ -236,20 +236,6 @@ section article p {
             min-height: 80px;
         }
     
-        .card-image {
-            grid-area: image;
-            height: 130px;
-            width: 130px;
-        }
-    
-        .card-image img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            top:0;
-            right:0
-        }
-    
         .card-content {
             display: content;
             padding: 0;
@@ -270,18 +256,41 @@ section article p {
             margin-top: -10px;
         }
     
+        .card-image {
+            position: relative; 
+            overflow: hidden; 
+            height: 130px;
+            width: 130px;
+         
+            order:1
+        }
+        
+        .card-image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover; 
+        }
+        
         .tag {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
+            position: absolute; 
+            bottom: 0; 
+            right: 0; 
             background: #007bff;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.8em;
+            color: white; 
+            padding: 4px 8px; 
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%, 0% 40%);
+            font-size: 0.8rem; 
+            z-index: 1; 
+        }
+        
+        .tag .tag-text {
+            margin: 0;
+            padding: 0;
+            text-align: center; 
+            direction: rtl; 
         }
     
-        /* Add border at the bottom of the card */
+       
         .card::after {
             content: '';
             position: absolute;
