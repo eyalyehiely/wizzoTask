@@ -167,10 +167,10 @@ img.main-ad#snow-pic {
     }
 
     .main-ad {
-        width: 90vw;
+        width: 100vw;
         height: auto;
         padding: 1px;
-        margin-left: 3vw;
+        margin-left: 1vw;
         margin-bottom: 5vw;
         margin-top: 6vh;
         box-sizing: border-box;
